@@ -1,0 +1,61 @@
+@{
+    ViewData["Title"] = "Tipo de Ejercicios";
+}
+
+<head>
+  <link rel="stylesheet" href="~/css/ejerciciosFisicos-Tipo.css">
+</head>
+<div class="text-center">
+    <h1 class="display-4">Tipos de Ejercicios</h1>
+</div>
+
+<div class="mb-2">
+    @* <button type="button" onclick="ListadoTipoEjercicios()" class="btn btn-primary">
+    actualizar datos
+    </button> *@
+    <button type="button" class="btn btn-success shadow" onclick="NuevoEjercicio()" data-bs-toggle="modal"
+        data-bs-target="#ModalTipoEjercicio">
+        Agregar Ejercicio
+    </button>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="ModalTipoEjercicio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="ModalTitulo"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <input type="hidden" id="TipoEjercicioID" value="0" />
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" style="text-transform:uppercase"
+                        placeholder="Nombre del tipo de ejercicio">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" onclick="LimpiarModal()" class="btn btn-danger"
+                    data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" onclick="GuardarEjercicio()" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<table class="table table-hover table-bordered table-condensed shadow tabla" style="background-color: white;">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th style="width: 70px"></th>
+            <th style="width: 70px"></th>
+        </tr>
+    </thead>
+    <tbody id="tbody-tipoejercicios">
+    </tbody>
+</table>
+@section Scripts {
+    <script src="~/js/tipoejercicios-1.0.0.js"></script>
+}

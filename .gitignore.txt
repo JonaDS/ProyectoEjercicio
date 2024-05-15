@@ -1,0 +1,5 @@
+# Excluimos los archivos OBJ, BIN y la carpeta .vs ya que se crean nuevamente al ejecutarse.
+/ProyectoEjercicioFisico/ProyectoEjercicioFisico/bin/
+/ProyectoEjercicioFisico/ProyectoEjercicioFisico/obj/
+/.vs
+/ProyectoEjercicioFisico/.vs

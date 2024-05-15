@@ -1,0 +1,15 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+.titulo1:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}   
+
+.footer .container {
+    color: rgb(20, 168, 173); /* Cambiar color del texto a rojo */
+    font-weight: bold; /* Hacer que el texto sea negrita */
+}
+
+.titulo2{
+    font-weight: bold;
+}

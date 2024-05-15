@@ -1,0 +1,27 @@
+body{
+    background-image: url(../img/imgFondo.jpg);
+    background-size: cover;
+}
+
+.car1{
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 3px black;
+}
+.car1:hover{
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 3px gray;
+    scale: 115%;
+    transition: 0.25s;
+}
+.descripcion{
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 4px 6px 4px black;
+    color: rgb(236, 236, 236);
+}
+
+.titulo{
+    color: white;
+    text-shadow: 4px 6px 4px black;
+    font-size: 80px;
+}
